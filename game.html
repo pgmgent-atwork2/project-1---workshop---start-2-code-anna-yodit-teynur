@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>Math travel</title>
 </head>
 <body>
@@ -18,6 +18,11 @@
         </div>
     </header>
     <main>
+        <div class="background_video">
+            <video autoplay muted loop id="myVideo">
+                <source src="images/background_video.mp4" type="video/mp4">
+            </video>
+        </div>
         <article>
             <form class="math">
                 <p class="math__question"></p>
@@ -26,38 +31,45 @@
                 </button>
             </form>
         </article>
-        <articel>
-            <div>
+        <article>
+            <div class="car">
                 <img src="images/car.svg" alt="Auto">
             </div>
-            <div class="destination">
-                <div>
-                    <div class="line">
-                        <div class="cirkel">België</div>
+            <div class="weg">
+                <div class="destination">
+                    <div>
+                        <div class="line">
+                            <div class="cirkel"></div>
+                            <p>België</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="line">
-                        <div class="cirkel">Nederland</div>
+                    <div>
+                        <div class="line">
+                            <div class="cirkel"></div>
+                            <p>Nederland</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="line">
-                        <div class="cirkel">Duitsland</div>
+                    <div>
+                        <div class="line">
+                            <div class="cirkel"></div>
+                            <p>Duitsland</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="line">
-                        <div class="cirkel">Denemarken</div>
+                    <div>
+                        <div class="line">
+                            <div class="cirkel"></div>
+                            <p>Denemarken</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="line">
-                        <div class="cirkel">Noorwegen</div>
+                    <div>
+                        <div class="line">
+                            <div class="cirkel"></div>
+                            <p>Noorwegen</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </articel>
+        </article>
     </main>
 </body>
 </html>

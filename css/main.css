@@ -1,0 +1,57 @@
+header {
+    text-align: center;
+    border-bottom: 1px solid hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.background_video {
+    height: 100px;
+}
+
+video {
+    width: 100vw;
+    height: 48vw;
+    margin-top: -100px;
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+}
+
+.car {
+    width: 200px;
+}
+
+.destination {
+    display: flex;
+}
+
+.line {
+    background-color: black;
+    padding: 5px;
+    position: relative;
+    margin-right: -0.3125rem;
+    width: 307px;
+}
+
+.cirkel {
+    background-color: black;
+    padding: 16px;
+    width: 1.625rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 6.875rem;
+}
+
+.weg {
+    bottom: 0;
+    position: absolute;
+}
+
+.country {
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    justify-content: space-between;
+    gap: 250px;
+}
