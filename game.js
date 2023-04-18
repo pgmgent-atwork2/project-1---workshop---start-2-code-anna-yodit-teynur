@@ -7,11 +7,11 @@ function generateQuestion() {
   let int2 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
       document.querySelector('.math__question').innerHTML = int1 + " " + "+" + " " + int2;
       return int1 + int2;
-      }
+}
 
-      let qanswer = generateQuestion();
+let qanswer = generateQuestion();
 
-      function move() {
+function move() {
       let uanswer = document.querySelector('.math__answer').value;
       if (uanswer == qanswer) {
       let car = document.querySelector('.red-car');

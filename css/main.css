@@ -1,32 +1,70 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+    font-family: 'montserrat';
+}
+
 header {
     text-align: center;
-    border-bottom: 1px solid hsl(0, 0%, 0%);
+    //border-bottom: 1px solid hsl(185.45deg 12.36% 82.55%);
     background-color: hsl(0, 0%, 100%);
+    padding: 10px 0;
 }
 
-.forum_math{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-}
-
-.background_video {
-    height: 100px;
+.header__nav a {
+    //text-decoration: none;
+    color: black;
+    margin: 0 15px;
 }
 
 video {
     width: 100vw;
-    height: 48vw;
+    height: 46vw;
     margin-top: -100px;
     z-index: -1;
     position: absolute;
     object-fit: cover;
 }
 
+.background-video {
+    height: 100px;
+}
+
+.forum-math {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+}
+
+.math__question {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.math__button {
+    background-color: hsl(89.57deg 35.03% 38.63%);
+    border: 1px solid hsl(89.57deg 35.03% 38.63%);
+    color: white;
+}
+
 .red-car {
     position: relative;
     width: 200px;
-    left:0px;
+    left: 0px;
+    top: 285px;
+}
+
+.road {
+    bottom: 0;
+    position: absolute;
 }
 
 .destination {
@@ -34,32 +72,36 @@ video {
 }
 
 .line {
-    background-color: black;
-    padding: 5px;
+    background-color: hsl(208.09deg 29.56% 31.18%);
+    padding: 30px;
     position: relative;
     margin-right: -0.3125rem;
-    width: 307px;
+    width: 311px;
+}
+
+.line p {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 45px;
+    //text-align: center;
 }
 
 .cirkel {
-    background-color: black;
-    padding: 16px;
+    background-color: hsl(208.09deg 29.56% 31.18%);
+    padding: 30px;
     width: 1.625rem;
     border-radius: 50%;
     position: absolute;
-    top: -10px;
-    left: 6.875rem;
+    top: -20px;
+    left: 80px;
+    z-index: -1;
 }
 
-.weg {
-    bottom: 0;
-    position: absolute;
-}
-
-.country {
-    display: flex;
-    position: absolute;
-    bottom: 50px;
-    justify-content: space-between;
-    gap: 250px;
-}
+// .country {
+//     display: flex;
+//     position: absolute;
+//     bottom: 50px;
+//     justify-content: space-between;
+//     gap: 250px;
+// }
