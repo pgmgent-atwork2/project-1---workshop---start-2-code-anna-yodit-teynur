@@ -39,7 +39,6 @@ video {
     object-fit: cover;
 }
 
-
 .background-video {
     height: 100px;
 }
@@ -70,7 +69,7 @@ video {
     top: 285px;
 }
 
-.red-car{
+.red-car {
     animation: shake 1.5s;
     animation-iteration-count: infinite;
     }
@@ -160,3 +159,15 @@ video {
 //     bottom: 50px;
 //     justify-content: space-between;
 //     gap: 250px; }
+*/
+
+// index pagina
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    font-size: 45px;
+}
