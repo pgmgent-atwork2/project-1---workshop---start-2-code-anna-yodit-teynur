@@ -1,0 +1,12 @@
+body{
+   overflow: auto;
+}
+
+.container_tutorial{
+   margin: 0 auto;
+   max-width: 1440px;
+}
+
+.stap{
+   margin-bottom: 2rem;
+}
