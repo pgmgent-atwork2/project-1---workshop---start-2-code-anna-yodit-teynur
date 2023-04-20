@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="./css/reset.css">
    <link rel="stylesheet" href="./css/main.css">
    <link rel="stylesheet" href="./css/tut.css">
-   <title>Document</title>
+   <title>Tutorial</title>
 </head>
 <body>
       <header>
@@ -24,10 +24,11 @@
                <div class="stap begin">
                   <h1>Hoe hebben wij dit game gemaakt?</h1>
                   <p>Een som spel waar je juiste aantwoord moet geven waar uw auto kan rijzen tussen de verschillende landen.</p>
+                  <p> Hier de nodige bestanden: <a href="images/source_game.zip"> Download de bronbestanden</a></p>
                </div>
                <article>
                   <div class="stap intro">
-                     <img class="screenshot_game" src="" alt="">
+                     <img class="screenshot_game" src="images/tutorial/game_screenshot.jpg" alt="">
                      <h2>Nodige codetalen:</h2>
                      <ul>
                         <li>HTML</li>
@@ -40,33 +41,69 @@
                   <div class="stap stap_one">
                      <h2>Stap 1 - Mappen structuur</h2>
                      <p>Wij hebben <strong>"Visual Studio Code"</strong> gebruikt als code-editor maar jullie kunnen ook andere zoals "SublimeText", "Atom" en of andere gebruiken.</p>
-                     <img class="screenshot_stap" src="" alt="">
                      <ol>
                         <li>Maak een map op uw bureaublad of door jou gewenste plaats met het naam <strong>"mathtravel"</strong>.</li>
-                        <img class="screenshot_stap" src="" alt="">
+                        <img class="screenshot_stap" src="images/tutorial/begin.jpg" alt="Folder">
                         <li>Daarna doe je het map <strong>"mathtravel"</strong> open met uw code-editor.</li>
-                        <img class="screenshot_stap" src="" alt="">
                         <li>Bouw de volgende mappen- en bestandenstructuur aan:</li>
-                        <img class="screenshot_stap" src="" alt="">
+                        <img class="screenshot_stap" src="images/tutorial/folder_structuur.jpg" alt="Folder Structuur">
                         <li>Start de live server door rechtsonder <strong>"Go Live"</strong> balk te klikken om jouw server pagina te bekijken. <br> Uw standaard browser zal nu gestart worden en je zal een blanco webpagina zien!</li>
                      </ol>
                         <h4>Eerste stap is gelukt! Je bent echt goed bezig!</h4>
                   </div>
-                     <div class="stap stap_two">
-                        <h2>Stap 2 - HTML & CSS</h2>
-                        <p>Tijd om met deze koppel te coderen. Zonder hen zien wij niets op onze webpagina!</p>
-                           <ol>
-                              <li>Kopeer onderstaande code in uw <strong>"game.html"</strong>. Bewaar vervolgens dat bestand <strong>"CMND/CNTRL + S"</strong>.</li>
-                                 <p>Code snippet</p>
-                                 <p>Dat is de structuur van onze Game pagina, het zal ons helpen om te werken in CSS en JavaScript</p>
-                              <li>Kopieer onderstaande code in jouw <strong>"main.css"</strong> bestand. Bewaar vervolgens dat bestand.</li>
-                                 <p>Code snippet</p>
-                                 <p>Dit bevat alvast een aantal basisstijlen die we later zullen nodig hebben voor de look & feel van onze app.</p>
-                              <li>Bekijk het resultaat in de browser (de url is hoogstwaarschijnlijk: <a href="http://127.0.0.1:5500/">http://127.0.0.1:5500/</a>). <br> Als alles goed is, ziet het er nu zo uit. Een volledig gekleurd vlak.</li>
-                           </ol>
-                     </div>
+                  <div class="stap stap_two">
+                     <h2>Stap 2 - HTML & CSS</h2>
+                     <p>Tijd om met deze koppel te coderen. Zonder hen zien wij niets op onze webpagina!</p>
+                        <ol>
+                           <li>Kopeer onderstaande code in uw <strong>"game.html"</strong>. Bewaar vervolgens dat bestand <strong>"CMND/CNTRL + S"</strong>.</li>
+                              <iframe width="100%" height="300" src="//jsfiddle.net/teynuryuyuu/53cj2dnf/2/embedded/html/"
+                                 allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                              <p>Dat is de structuur van onze Game pagina, het zal ons helpen om te werken in CSS en JavaScript</p> <br>
+                           <li>Kopieer onderstaande code in jouw <strong>"main.css"</strong> bestand. Bewaar vervolgens dat bestand.</li>
+                              <iframe width="100%" height="300" src="//jsfiddle.net/teynuryuyuu/53cj2dnf/2/embedded/css/"
+                                 allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                              <p>Dit bevat alle stijl die we later nodig zullen hebben voor de look & feel van onze app.</p> <br>
+                           <li>Bekijk het resultaat in de browser (de url is hoogstwaarschijnlijk: <a href="http://127.0.0.1:5500/">http://127.0.0.1:5500/</a>). <br> Als alles goed is, ziet het er nu zo uit.</li>
+                           <iframe width="100%" height="600" src="//jsfiddle.net/teynuryuyuu/53cj2dnf/3/embedded/result/"
+                              allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                        </ol>
+                  </div>
+                  <div class="stap stap_tree">
+                     <h2>Stap 3 - JavaScript</h2>
+                     <p>JavaScript is onze hoofdrol speler zonder hem kunnen wij geen interactiviteit toevoegen aan onze website.</p>
+                     <p>"Hello World!"</p>
+                     <ol>
+                        <li>Eers moeten wij onze "game.js" linken met onze html.</li>
+                        <p> <strong>script src="./scripts/game.js"> script</strong> </p>
+                        <li>Ga naar "game.js" en plak volgende in om te testen of uw html gelinkt is met jouw JS bestand. </li>
+                        <p> <strong> alert('Hello world') </strong></p> 
+                        <p>Code pen van hello world</p> <br>
+                        <img class="screenshot_stap"  src="" alt="">
+                        <strong><p>Als je de allert krijgt dan is het wel gelinkt en je kan de geplakte code weg doen om volgende in te plakken.</p></strong>
+                        <p>Met deze code kunnen wij random sommen genereren zodra wij met de oplossing kunnen de auto laten bewegen.</p> <br>
+                        <p>Wij declarelen onze data's.</p>
+                        <iframe width="100%" height="120" src="//jsfiddle.net/teynuryuyuu/53cj2dnf/12/embedded/js/"
+                           allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe> <br>
+                        <p>Hier met deze code genereren wij random sommen.</p>
+                        <iframe width="100%" height="220" src="//jsfiddle.net/teynuryuyuu/53cj2dnf/17/embedded/js/"
+                           allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                        <p>Met deze functie laten wij de auto bewegen bij een correcte antwoord.</p>
+                        <iframe width="100%" height="300" src="//jsfiddle.net/teynuryuyuu/53cj2dnf/20/embedded/js/"
+                           allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                        <h3>Hier de volledige code :)</h3>
+                        <iframe width="100%" height="300" src="//jsfiddle.net/teynuryuyuu/53cj2dnf/7/embedded/js/"
+                           allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+                     </ol>
+                     <h3>Bewaar het bestand en kijk in de browser of er iets verschijnt.</h3>
+                     <img class="screenshot_stap" src="images/tutorial/game_screenshot.jpg" alt="Game">
+                     <h1>Proficiat nu heb je een leuke game waar je lekker kan spelen. Veel speel plezier!</h1>
+                  </div>
+                        <footer>
+                           <p>© Arteveldehogeschool Gent 2023</p>
+                        </footer>
                </article>
          </div>
       </main>
+
 </body>
 </html>

@@ -1,5 +1,5 @@
 body{
-   overflow: auto;
+   margin: 0 auto;
 }
 
 .container_tutorial{
@@ -10,3 +10,21 @@ body{
 .stap{
    margin-bottom: 2rem;
 }
+
+iframe{
+   margin-bottom: 5rem;
+}
+
+article{
+   padding-bottom: 5rem ;
+}
+
+li{
+   margin-bottom: 0.5rem;
+}
+
+.screenshot_stap{
+   margin-bottom: 2rem;
+}
+
+
