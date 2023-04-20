@@ -1,6 +1,6 @@
 let minimum = 1;
 let maximum = 100;
-let car = document.querySelector('.red-car').innerHTML;
+let btn = document.querySelector('.math__button');
 
 function generateQuestion() {
   let int1 = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
@@ -11,10 +11,10 @@ function generateQuestion() {
 
 let qanswer = generateQuestion();
 
-function move() {
+btn.addEventListener('click', (e) => {
       let uanswer = document.querySelector('.math__answer').value;
       if (uanswer == qanswer) {
-      let car = document.querySelector('.red-car');
+            let car = document.querySelector('.red-car');
       let moveDistances = [170];
       let finalLeft = moveDistances.reduce(function(acc, distance) {
             return acc + distance;
@@ -24,4 +24,4 @@ function move() {
       } else {
       alert("Het antwoord is onjuist. Probeer het opnieuw.");
       }
-}
+})
