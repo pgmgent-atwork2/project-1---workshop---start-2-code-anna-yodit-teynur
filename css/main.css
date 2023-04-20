@@ -63,10 +63,10 @@ video {
 }
 
 .red-car {
-    position: relative;
+    position: absolute;
     width: 300px;
     left: 0px;
-    top: 285px;
+    bottom: 152px;
 }
 
 .red-car {
@@ -119,16 +119,13 @@ video {
     position: absolute;
 }
 
-.destination {
-    display: flex;
-}
 
 .line {
     display: flex;
-    background-color: hsl(208.09deg 29.56% 31.18%);
-    padding: 25px;
+    background-color: #385167;
+    padding: 55px;
     position: relative;
-    width: 311px;
+    width: 100vw;
     text-align: center;
     align-items: center;
     justify-content: flex-start;
@@ -142,32 +139,54 @@ video {
     text-align: center;
 }
 
-.cirkel {
-    background-color: hsl(208.09deg 29.56% 31.18%);
-    padding: 30px;
-    width: 1.625rem;
-    border-radius: 50%;
-    position: absolute;
-    top: -20px;
-    left: 80px;
-    z-index: -1;
+.cirkles {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+    z-index: 1;
 }
 
-/* .country {
-//     display: flex;
-//     position: absolute;
-//     bottom: 50px;
-//     justify-content: space-between;
-//     gap: 250px; }
-*/
+.cirkle {
+    background-color: hsl(208.09deg 29.56% 31.18%);
+    padding: 28px;
+    width: 105px;
+    border-radius: 50%;
+    color: white;
+}
 
-// index pagina
 
-.main {
+/* index pagina */
+
+.content {
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #000000;
 }
 
-.title {
-    font-size: 45px;
+.content__title {
+    font-size: 50px;
+}
+
+.content p {
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+.content__link {
+    color: black;
+}
+
+.sum {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: -1;
+    background-color: black;
+    padding: 10px;
+    color: white;
 }
